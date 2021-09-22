@@ -18,6 +18,7 @@ public class BreedsControllerTest {
     @Autowired
     MockMvc mockMvc;
     @Test
+
     public void getBreedsTest() throws  Exception{
         mockMvc.perform(MockMvcRequestBuilders.get("/api/breeds/list/all"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
